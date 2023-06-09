@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <h2>{{pge}}</h2>
+
+    <form action="/" method="POST">
+
+        <label for="comment">Enter your FeedBack</label><br>
+        <textarea name="feed" id="" cols="40" rows="8"></textarea><br>
+        <input type="submit">
+
+    </form>
+    <br>
+    <div>
+        {% if feed %}
+       
+        <label for="feed">Feed Back::: </label>: {{feed}}
+       {% endif %}
+    </div>
+    <div>
+        
+        Negative:{{negative}} <br>
+        Positive: {{positive}}
+
+    </div>
+
+</body>
+</html>
